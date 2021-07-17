@@ -13,11 +13,16 @@ class Controller extends BaseController
 
     public function homepage()
     {
-        return view('welcome');
+        
+        $variavel = "homepage do sistema de investimento";
+
+        return view('welcome', [
+            'title' => $variavel
+        ]);
     }
     public function cadastrar()
     {
-         echo 'cadastrar';
+         echo 'cadastrar'; 
     }
     public function fazerlogin()
     {
